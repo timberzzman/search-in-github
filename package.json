@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "husky": "^7.0.4"
+  },
+  "scripts": {
+    "server:lint": "cd server && npm run lint",
+    "prepare": "husky install"
+  }
+}
