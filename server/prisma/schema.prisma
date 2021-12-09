@@ -43,4 +43,11 @@ model User {
   twitter_username    String?   @db.Text
   created_at          DateTime? @default(now())
   updated_at          DateTime? @default(now())
+  private_gists       Int?      @db.Integer
+  total_private_repos Int?      @db.Integer
+  owned_private_repos Int?      @db.Integer
+  disk_usage          Int?      @db.Integer
+  collaborators       Int?      @db.Integer
+  two_factor_authentication Boolean?  @db.Boolean
+  plan                Json?
 }
