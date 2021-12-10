@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import UserComponent from '../Components/User/UserComponent';
 
 export default function UserScreen() {
   return (
     <View style={styles.container}>
-      <Text>User screen</Text>
+      <UserComponent />
     </View>
   );
 }
