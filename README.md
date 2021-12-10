@@ -1,12 +1,21 @@
 # Search in Github
 
-## Description
+## 🏷️ Description
 
 The purpose is to create a simple API using express and a showcase mobile app using Expo (React Native).
 
 The API should get data from the github API, and store them in a PostgreSQL database.
 
 Link to the subject : [https://github.com/pu-erh/search-in-github](https://github.com/pu-erh/search-in-github)
+
+
+
+## 📋 Features
+
+Here is some of the features that are actually present in the app :
+
+ - A search history is present on the app
+ - The search history is stored in the local storage. He should be cached if you restart the app.
 
 ## 📖 Configuration
 
@@ -64,6 +73,15 @@ npm run start
 ```
 
 Your expo server should be accessible at [http://localhost:19000](http://localhost:19000)
+
+## 🕦 WIP
+
+There is a list of things to do for making the app much cooler and useful for the user :
+
+ - Implementation of User settings like (dark mode, cleaning search history and more)
+ - Implementation of Gettings all the in-depth elements of a user (gists, repositories, followers, following and more)
+ - Making these elements visible in the app
+ - Generate a release file for the app, who can be installed without expo
 
 ## 💌 Credits
 
