@@ -20,7 +20,7 @@ app.get('/users/:id', async (req, res) => {
     }
     await db.createUser(userData);
   }
-  res.status(200).send({ data: userData });
+  res.status(200).json({ data: userData });
 });
 
 const port = process.env.PORT || 3000;

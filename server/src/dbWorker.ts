@@ -8,9 +8,18 @@ export default class DbWorker {
   }
 
   public async getUser(login: string) {
-    return this.instance.user.findUnique({
-      where: { login },
+    const result = await this.instance.user.findMany({
+      where: {
+        login: {
+          contains: login,
+          mode: 'insensitive',
+        },
+      },
     });
+    if (result.length === 0) {
+      return null;
+    }
+    return result[0];
   }
 
   public async createUser(userData: any) {
